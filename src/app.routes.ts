@@ -5,8 +5,8 @@ import { MainComponent } from './home/main/main.component';
 const routes: Routes = [
     { path: '',       component: MainComponent },
     { path: 'about',   loadChildren: './dist/about/about.module#AboutModule' },
+    { path: 'contact',   loadChildren: './dist/contact/contact.module#ContactModule' },
     { path: ':slug',   loadChildren: './dist/post/post.module#PostModule' }
-
 ];
 
 export const Routing: ModuleWithProviders = RouterModule.forRoot(routes);
